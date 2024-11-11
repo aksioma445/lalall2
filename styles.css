@@ -1,0 +1,272 @@
+/* Загальний стиль */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://i.ibb.co/Nxs2PG0/2024-11-11-19-14-42.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+/* Username та ID у верхньому лівому куті */
+#user-info {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Основна область з бульбашками */
+#bubble-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* З'єднувальні лінії */
+#bubble-container::before,
+#bubble-container::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    background-color: rgba(0, 128, 255, 0.7);
+    top: 0;
+}
+
+/* Основний стиль для бульбашок */
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0, 128, 255, 0.3);
+    border: 2px solid rgba(0, 128, 255, 0.8);
+    box-shadow: 0 0 15px 5px rgba(0, 128, 255, 0.5);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Стилі для кожного блоку з текстом */
+#username {
+    position: absolute;
+    width: 100px;
+    height: 140px;
+    top: 40px;
+    left: 230px;
+}
+
+#user-id {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 65px;
+    left: 210px;
+}
+
+#balance {
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    height: auto;
+    top: 250px;
+    left: 145px;
+    animation: levitate2 5s infinite alternate ease-in-out;
+}
+
+#level {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    top: 475px;
+    left: 200px;
+    animation: levitate4 5s infinite alternate ease-in-out;
+}
+
+#bonus {
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    height: auto;
+    top: 525px;
+    left: 320px;
+    animation: levitate5 5s infinite alternate ease-in-out;
+}
+
+/* Підписка */
+#subscription {
+    margin-top: 580px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    font-size: 14px;
+    display: inline-block;
+}
+
+/* Нижня панель */
+#navigation {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 0 10px;
+}
+
+
+
+/* Анімація для першої картинки */
+@keyframes levitate1 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-6px, -4px); }
+    50% { transform: translate(4px, 3px); }
+    75% { transform: translate(-4px, 4px); }
+    100% { transform: translate(5px, -4px); }
+}
+
+/* Анімація для другої картинки */
+@keyframes levitate2 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(6px, -5px); }
+    50% { transform: translate(-5px, 5px); }
+    75% { transform: translate(4px, -3px); }
+    100% { transform: translate(-6px, 5px); }
+}
+
+/* Анімація для третьої картинки */
+@keyframes levitate3 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-4px, 6px); }
+    50% { transform: translate(5px, -3px); }
+    75% { transform: translate(-5px, -2px); }
+    100% { transform: translate(6px, 3px); }
+}
+
+/* Анімація для четвертої картинки */
+@keyframes levitate4 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(5px, 4px); }
+    50% { transform: translate(-6px, -3px); }
+    75% { transform: translate(3px, 5px); }
+    100% { transform: translate(-4px, -5px); }
+}
+
+/* Анімація для п'ятої картинки */
+@keyframes levitate5 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-5px, 3px); }
+    50% { transform: translate(4px, -5px); }
+    75% { transform: translate(-3px, 6px); }
+    100% { transform: translate(5px, -4px); }
+}
+
+/* Стиль для кнопок */
+.nav-button {
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Стиль для іконки між кнопками */
+.nav-icon {
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+}
+
+#my-subka {
+    position: absolute; /* Використовується для точного позиціонування */
+    top: 570px; /* Відступ зверху */
+    left: 110px; /* Відступ зліва */
+    width: 300px; /* Ширина зображення */
+    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
+}
+#my-idka {
+    position: absolute; /* Використовується для точного позиціонування */
+    top: 2px; /* Відступ зверху */
+    left: 100px; /* Відступ зліва */
+    width: 320px; /* Ширина зображення */
+    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
+}
+#my-menu {
+    position: fixed; /* Використовується для точного позиціонування */
+    bottom: 0; /* прикріплюємо до низу */
+    top: 655px; /* Відступ зверху */
+    left: 0px; /* Відступ зліва */
+    width: 100%; /* ширина елементу на весь екран */
+    height: 70px; /* Автоматичне визначення висоти для збереження пропорцій */
+}
+
+#my-buble1 {
+    position: fixed; /* Використовується для точного позиціонування */
+    bottom: 0; /* прикріплюємо до низу */
+    top: 93px; /* Відступ зверху */
+    left: 230px; /* Відступ зліва */
+    width: 110px; /* Ширина зображення */
+    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
+    animation: levitate1 5s infinite alternate ease-in-out;
+}
+#my-buble2 {
+    position: fixed; /* Використовується для точного позиціонування */
+    bottom: 0; /* прикріплюємо до низу */
+    top: 182px; /* Відступ зверху */
+    left: 104px; /* Відступ зліва */
+    width: 140px; /* Ширина зображення */
+    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
+    animation: levitate2 5s infinite alternate ease-in-out;
+}
+#my-buble3 {
+    position: fixed; /* Використовується для точного позиціонування */
+    bottom: 0; /* прикріплюємо до низу */
+    top: 233px; /* Відступ зверху */
+    left: 244px; /* Відступ зліва */
+    width: 220px; /* Ширина зображення */
+    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
+    animation: levitate3 5s infinite alternate ease-in-out;
+
+}
+#my-buble4 {
+    position: fixed; /* Використовується для точного позиціонування */
+    bottom: 0; /* прикріплюємо до низу */
+    top: 423px; /* Відступ зверху */
+    left: 155px; /* Відступ зліва */
+    width: 105px; /* Ширина зображення */
+    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
+    animation: levitate4 5s infinite alternate ease-in-out;
+}
+#my-buble5 {
+    position: fixed; /* Використовується для точного позиціонування */
+    bottom: 0; /* прикріплюємо до низу */
+    top: 485px; /* Відступ зверху */
+    left: 291px; /* Відступ зліва */
+    width: 90px; /* Ширина зображення */
+    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
+    animation: levitate5 5s infinite alternate ease-in-out;
+}
