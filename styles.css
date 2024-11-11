@@ -1,11 +1,19 @@
+/* Центрування основного контейнера */
+#content-container {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
 /* Загальний стиль */
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: url('https://i.ibb.co/Nxs2PG0/2024-11-11-19-14-42.png') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
@@ -131,8 +139,6 @@ body {
     padding: 0 10px;
 }
 
-
-
 /* Анімація для першої картинки */
 @keyframes levitate1 {
     0% { transform: translate(0, 0); }
@@ -201,72 +207,74 @@ body {
     margin: 0 10px;
 }
 
+/* Стилі для зображень у контейнері */
 #my-subka {
-    position: absolute; /* Використовується для точного позиціонування */
-    top: 570px; /* Відступ зверху */
-    left: 110px; /* Відступ зліва */
-    width: 300px; /* Ширина зображення */
-    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
+    position: absolute;
+    top: 570px;
+    left: 110px;
+    width: 300px;
+    height: auto;
 }
+
 #my-idka {
-    position: absolute; /* Використовується для точного позиціонування */
-    top: 2px; /* Відступ зверху */
-    left: 100px; /* Відступ зліва */
-    width: 320px; /* Ширина зображення */
-    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
+    position: absolute;
+    top: 2px;
+    left: 100px;
+    width: 320px;
+    height: auto;
 }
+
 #my-menu {
-    position: fixed; /* Використовується для точного позиціонування */
-    bottom: 0; /* прикріплюємо до низу */
-    top: 655px; /* Відступ зверху */
-    left: 0px; /* Відступ зліва */
-    width: 100%; /* ширина елементу на весь екран */
-    height: 70px; /* Автоматичне визначення висоти для збереження пропорцій */
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    top: 650px;
+    left: 0px;
+    width: 100%;
+    height: 90px;
 }
 
 #my-buble1 {
-    position: fixed; /* Використовується для точного позиціонування */
-    bottom: 0; /* прикріплюємо до низу */
-    top: 93px; /* Відступ зверху */
-    left: 230px; /* Відступ зліва */
-    width: 110px; /* Ширина зображення */
-    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
+    position: fixed;
+    top: 93px;
+    left: 230px;
+    width: 110px;
+    height: auto;
     animation: levitate1 5s infinite alternate ease-in-out;
 }
+
 #my-buble2 {
-    position: fixed; /* Використовується для точного позиціонування */
-    bottom: 0; /* прикріплюємо до низу */
-    top: 182px; /* Відступ зверху */
-    left: 104px; /* Відступ зліва */
-    width: 140px; /* Ширина зображення */
-    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
+    position: fixed;
+    top: 182px;
+    left: 104px;
+    width: 140px;
+    height: auto;
     animation: levitate2 5s infinite alternate ease-in-out;
 }
-#my-buble3 {
-    position: fixed; /* Використовується для точного позиціонування */
-    bottom: 0; /* прикріплюємо до низу */
-    top: 233px; /* Відступ зверху */
-    left: 244px; /* Відступ зліва */
-    width: 220px; /* Ширина зображення */
-    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
-    animation: levitate3 5s infinite alternate ease-in-out;
 
+#my-buble3 {
+    position: fixed;
+    top: 233px;
+    left: 244px;
+    width: 220px;
+    height: auto;
+    animation: levitate3 5s infinite alternate ease-in-out;
 }
+
 #my-buble4 {
-    position: fixed; /* Використовується для точного позиціонування */
-    bottom: 0; /* прикріплюємо до низу */
-    top: 423px; /* Відступ зверху */
-    left: 155px; /* Відступ зліва */
-    width: 105px; /* Ширина зображення */
-    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
+    position: fixed;
+    top: 423px;
+    left: 155px;
+    width: 105px;
+    height: auto;
     animation: levitate4 5s infinite alternate ease-in-out;
 }
+
 #my-buble5 {
-    position: fixed; /* Використовується для точного позиціонування */
-    bottom: 0; /* прикріплюємо до низу */
-    top: 485px; /* Відступ зверху */
-    left: 291px; /* Відступ зліва */
-    width: 90px; /* Ширина зображення */
-    height: auto; /* Автоматичне визначення висоти для збереження пропорцій */
+    position: fixed;
+    top: 485px;
+    left: 291px;
+    width: 90px;
+    height: auto;
     animation: levitate5 5s infinite alternate ease-in-out;
 }
