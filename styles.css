@@ -168,7 +168,7 @@ body {
 #my-subka {
     position: absolute;
     top: 570px;
-    left: 0px;
+    left: 50px;
     width: 300px;
     height: auto;
 }
@@ -176,7 +176,7 @@ body {
 #my-idka {
     position: absolute;
     top: 2px;
-    left: 0px;
+    left: 50px;
     width: 320px;
     height: auto;
 }
@@ -196,7 +196,7 @@ body {
     position: fixed;
     place-items: center;
     top: 93px;
-    left: 130px;
+    left: 150px;
     width: 110px;
     height: auto;
     animation: levitate1 5s infinite alternate ease-in-out;
@@ -205,7 +205,7 @@ body {
 #my-buble2 {
     position: fixed;
     top: 182px;
-    left: 14px;
+    left: 34px;
     width: 140px;
     height: auto;
     animation: levitate2 5s infinite alternate ease-in-out;
@@ -214,7 +214,7 @@ body {
 #my-buble3 {
     position: fixed;
     top: 233px;
-    left: 144px;
+    left: 174px;
     width: 220px;
     height: auto;
     animation: levitate3 5s infinite alternate ease-in-out;
@@ -223,7 +223,7 @@ body {
 #my-buble4 {
     position: fixed;
     top: 423px;
-    left: 15px;
+    left: 50px;
     width: 105px;
     height: auto;
     animation: levitate4 5s infinite alternate ease-in-out;
@@ -231,7 +231,7 @@ body {
 #my-buble5 {
     position: fixed;
     top: 485px;
-    left: 191px;
+    left: 221px;
     width: 90px;
     height: auto;
     animation: levitate5 5s infinite alternate ease-in-out;
